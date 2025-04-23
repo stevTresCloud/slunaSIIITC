@@ -1,0 +1,21 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="slunaSIIITC.Views.vLista3"
+             Title="Registro de Usuario">
+    <VerticalStackLayout Spacing="20" Padding="20">
+        <Label 
+            Text="Registro de usuario"
+            FontSize="24"
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="txtNuevoUsuario"
+               Placeholder="Nuevo usuario" />
+
+        <Entry x:Name="txtNuevaContrasena"
+               Placeholder="Nueva contraseña"
+               IsPassword="True" />
+
+        <Button Text="Registrarse"
+                Clicked="btnRegistrar_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
